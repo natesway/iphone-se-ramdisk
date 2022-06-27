@@ -18,8 +18,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Download deps
     run: |
-    git clone https://github.com/arx8x/CFPropertyList.git 
-    git clone https://github.com/MatthewPierson/PyBoot.git
+      git clone https://github.com/arx8x/CFPropertyList.git
+      git clone https://github.com/MatthewPierson/PyBoot.git
       
       
     - name: Install dependencies
