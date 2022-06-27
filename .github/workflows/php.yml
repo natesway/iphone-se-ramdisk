@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Download deps
-    run |
+    run: |
     git clone https://github.com/arx8x/CFPropertyList.git 
     git clone https://github.com/MatthewPierson/PyBoot.git
       
