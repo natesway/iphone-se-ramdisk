@@ -16,8 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      run: git clone https://github.com/arx8x/CFPropertyList.git
-      run: git clone https://github.com/MatthewPierson/PyBoot.git
+      run: git clone https://github.com/arx8x/CFPropertyList.git && git clone https://github.com/MatthewPierson/PyBoot.git
+      
       
     - name: Install dependencies
       run: ./make_telnet_rd.php -d iPhone8,4 -b N69AP -v 15.4.1 -s test.shsh
