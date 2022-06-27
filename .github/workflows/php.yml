@@ -18,6 +18,8 @@ jobs:
     run: |
       git clone https://github.com/arx8x/CFPropertyList.git
       git clone https://github.com/MatthewPierson/PyBoot.git
+          - uses: actions/checkout@v2
+          - name: Build
       ./make_telnet_rd.php -d iPhone8,4 -b N69AP -v 15.4.1 -s test.shsh
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
